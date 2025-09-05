@@ -4,6 +4,11 @@ const aiService = require('../services/aiService');
 const translate = require('../services/translate');
 
 // Chat endpoint
+router.post('/', (req, res) => {
+  const { message } = req.body;
+  res.json({ reply: `You said: ${message}` });
+});
+
 router.post('/', async (req, res) => {
   try {
     let { message, lang } = req.body;
