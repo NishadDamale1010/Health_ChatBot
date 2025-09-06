@@ -2,34 +2,158 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health Chatbot</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Chatbot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="chat-container">
-        <!-- Chatbot header with robo -->
-        <div class="chat-header">
-            <img src="logo.jpg" alt="Bot" class="bot-icon">
-            <h2>Health Chatbot</h2>
-        </div>
-        <!-- Floating Robo Mascot -->
-        <div class="robo-mascot">
-            <img src="logo.jpg" alt="Robo" />
-        </div>
-
-
-        <div class="chat-box" id="chat-box"></div>
-
-        <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type your message..." />
-            <button id="send-btn">Send</button>
-        </div>
+  <div class="chat-container">
+    <!-- Chatbot header with robo -->
+    <div class="chat-header">
+      <img src="logo.jpg" alt="Bot" class="bot-icon">
+      <h2>Health Chatbot</h2>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Floating Robo Button -->
+    <div id="robo-btn">
+      <img src="logo.jpg" alt="Robo" />
+    </div>
 
+    <div class="chat-box" id="chat-box"></div>
+
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <!-- End of Chatbot UI -->
+
+  <!-- Popup Info Card -->
+  <div id="robo-popup" class="hidden">
+    <h3>🤖 Team Innovators</h3>
+    <p><em>"Reimagining Education, Redefining Futures"</em></p>
+    <ul>
+      <li>👨‍💻 <b>Nishad</b> - JavaScript & Node.js</li>
+      <li>🤖 <b>Deepak</b> - AI & Python (Computer Vision)</li>
+      <li>🎨 <b>Prajwal</b> - CSS & Design</li>
+      <li>🖌️ <b>Pranav</b> - HTML & Designing</li>
+      <li>📚 <b>Aditya</b> - Research & Information Gathering</li>
+      <li>🎤 <b>Samiksha Bobade</b> - Presentation Head</li>
+    </ul>
+  </div>
+
+  <style>
+    /* Floating Robo Button */
+    #robo-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 70px;
+      height: 70px;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 1000;
+      animation: bounce 2s infinite; /* simple bounce */
+    }
+
+    #robo-btn img {
+      width: 50px;
+      height: 50px;
+    }
+
+    /* Popup Card */
+    #robo-popup {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 260px;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 15px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      display: none;
+      z-index: 999;
+      animation: fadeIn 0.3s ease;
+    }
+
+    #robo-popup h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    #robo-popup p {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    #robo-popup ul {
+      padding-left: 15px;
+      list-style: none;
+    }
+
+    #robo-popup ul li {
+      margin: 6px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    #robo-popup ul li b {
+      color: #222;
+    }
+
+    /* Bounce animation */
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* Fade animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script>
+    const roboBtn = document.getElementById('robo-btn');
+    const roboPopup = document.getElementById('robo-popup');
+
+    // Toggle popup when clicking robo
+    roboBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent closing immediately
+      if (roboPopup.style.display === "block") {
+        roboPopup.style.display = "none";
+      } else {
+        roboPopup.style.display = "block";
+      }
+    });
+
+    // Close popup if clicked outside
+    window.addEventListener('click', (e) => {
+      if (!roboBtn.contains(e.target) && !roboPopup.contains(e.target)) {
+        roboPopup.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
 </html>

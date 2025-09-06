@@ -1,0 +1,19 @@
+2025/09/06-10:26:55.678 590c Reusing MANIFEST C:\Users\NISHAD\OneDrive\Desktop\health-chatbot\Health_ChatBot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/06-10:26:55.680 590c Recovering log #46
+2025/09/06-10:26:55.680 590c Reusing old log C:\Users\NISHAD\OneDrive\Desktop\health-chatbot\Health_ChatBot\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000046.log 
+2025/09/06-10:26:56.986 3964 Compacting 1@1 + 1@2 files
+2025/09/06-10:26:57.284 3964 Generated table #49@1: 41324 keys, 1884290 bytes
+2025/09/06-10:26:57.284 3964 Compacted 1@1 + 1@2 files => 1884290 bytes
+2025/09/06-10:26:57.286 3964 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/06-10:26:57.890 5158 Level-0 table #51: started
+2025/09/06-10:26:57.905 5158 Level-0 table #51: 14187 bytes OK
+2025/09/06-10:26:57.909 5158 Delete type=2 #44
+2025/09/06-10:26:57.909 5158 Delete type=0 #46
+2025/09/06-10:26:57.909 5158 Delete type=2 #47
+2025/09/06-10:26:57.916 5158 Manual compaction at level-0 from '\x00\x1a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/09/06-10:27:04.294 63f8 Compacting 1@1 + 1@2 files
+2025/09/06-10:27:04.632 63f8 Generated table #52@1: 41514 keys, 1891244 bytes
+2025/09/06-10:27:04.632 63f8 Compacted 1@1 + 1@2 files => 1891244 bytes
+2025/09/06-10:27:04.635 63f8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/09/06-10:27:04.636 63f8 Delete type=2 #49
+2025/09/06-10:27:04.637 63f8 Delete type=2 #51

@@ -1,11 +1,15 @@
 // server.js
 import express from "express";
 import bodyParser from "body-parser";
+import pkg from "whatsapp-web.js";
+const { Client, LocalAuth } = pkg;
+import qrcode from "qrcode-terminal";
 
 const app = express();
 app.use(express.static("public"));
 app.use(bodyParser.json());
 
+// ✅ Responses (common for web + WhatsApp)
 const responses = {
   "hello": "Hi there! 🤖 I’m your HealthBot, how can I help you?",
   "hi": "Hello! 👋 Tell me your symptoms or ask a health question.",
@@ -26,13 +30,46 @@ const responses = {
   "bye": "Goodbye! Take care of your health 👋"
 };
 
+// ✅ Function to match message flexibly (like "I have cold")
+function getReply(message) {
+  message = message.toLowerCase();
+  for (let key in responses) {
+    if (message.includes(key)) {
+      return responses[key];
+    }
+  }
+  return "⚠️ Sorry, I don’t understand that yet. Try another health query!";
+}
 
+// ✅ Web chatbot route
 app.post("/chat", (req, res) => {
-  const userMessage = req.body.message.toLowerCase();
-  const reply = responses[userMessage] || "⚠️ Sorry, I don’t understand that yet. Try another health query!";
+  const userMessage = req.body.message;
+  const reply = getReply(userMessage);
   res.json({ reply });
 });
 
+// ✅ Start Express server
 app.listen(3000, () => {
-  console.log("✅ Server running at http://localhost:3000");
+  console.log("✅ Web server running at http://localhost:3000");
 });
+
+// ✅ WhatsApp bot setup
+const client = new Client({
+  authStrategy: new LocalAuth(),
+});
+
+client.on("qr", (qr) => {
+  qrcode.generate(qr, { small: true });
+});
+
+client.on("ready", () => {
+  console.log("✅ WhatsApp bot is ready!");
+});
+
+client.on("message", (message) => {
+  const reply = getReply(message.body);
+  client.sendMessage(message.from, reply);
+});
+
+client.initialize();
+// ✅ Start WhatsApp bot
