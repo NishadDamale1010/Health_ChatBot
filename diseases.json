@@ -1,0 +1,390 @@
+
+[
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "axios": "^1.6.7"
+  }
+},
+
+  {
+    "name": "Influenza (Flu)",
+    "symptoms": ["Fever", "Cough", "Sore throat", "Muscle aches", "Fatigue"]
+  },
+  {
+    "name": "Common Cold",
+    "symptoms": ["Runny or stuffy nose", "Sore throat", "Cough", "Congestion", "Sneezing"]
+  },
+  {
+    "name": "COVID-19",
+    "symptoms": ["Fever", "Cough", "Shortness of breath", "Loss of taste or smell", "Fatigue"]
+  },
+  {
+    "name": "Pneumonia",
+    "symptoms": ["Cough with phlegm", "Fever", "Chills", "Shortness of breath", "Chest pain"]
+  },
+  {
+    "name": "Bronchitis",
+    "symptoms": ["Cough with mucus", "Fatigue", "Shortness of breath", "Chest discomfort"]
+  },
+  {
+    "name": "Asthma",
+    "symptoms": ["Wheezing", "Shortness of breath", "Chest tightness or pain", "Coughing"]
+  },
+  {
+    "name": "Sinusitis",
+    "symptoms": ["Facial pain or pressure", "Nasal congestion", "Runny nose", "Loss of smell", "Cough"]
+  },
+  {
+    "name": "Strep Throat",
+    "symptoms": ["Throat pain", "Difficulty swallowing", "Fever", "Tiny red spots on the roof of the mouth", "Swollen lymph nodes in the neck"]
+  },
+  {
+    "name": "Allergies",
+    "symptoms": ["Sneezing", "Itchy, watery eyes", "Runny nose", "Rash", "Hives"]
+  },
+  {
+    "name": "Hypertension (High Blood Pressure)",
+    "symptoms": ["Headaches", "Shortness of breath", "Nosebleeds", "Dizziness", "Chest pain"]
+  },
+  {
+    "name": "Diabetes Mellitus",
+    "symptoms": ["Frequent urination", "Increased thirst", "Unexplained weight loss", "Blurred vision", "Fatigue"]
+  },
+  {
+    "name": "Heart Attack",
+    "symptoms": ["Chest pain or pressure", "Shortness of breath", "Pain in the arm, back, or jaw", "Nausea", "Cold sweat"]
+  },
+  {
+    "name": "Stroke",
+    "symptoms": ["Sudden numbness or weakness on one side of the body", "Slurred speech", "Confusion", "Vision problems", "Dizziness"]
+  },
+  {
+    "name": "Migraine",
+    "symptoms": ["Severe headache", "Nausea", "Aura", "Sensitivity to light and sound", "Vomiting"]
+  },
+  {
+    "name": "Tension Headache",
+    "symptoms": ["Dull, aching head pain", "Tightness or pressure around the forehead or back of the head"]
+  },
+  {
+    "name": "Anemia",
+    "symptoms": ["Fatigue", "Weakness", "Pale skin", "Shortness of breath", "Dizziness"]
+  },
+  {
+    "name": "Gastroenteritis (Stomach Flu)",
+    "symptoms": ["Diarrhea", "Abdominal cramps", "Nausea", "Vomiting", "Low-grade fever"]
+  },
+  {
+    "name": "Irritable Bowel Syndrome (IBS)",
+    "symptoms": ["Abdominal pain", "Bloating", "Gas", "Diarrhea or constipation"]
+  },
+  {
+    "name": "Ulcerative Colitis",
+    "symptoms": ["Diarrhea with blood or pus", "Abdominal pain", "Rectal pain", "Fatigue", "Weight loss"]
+  },
+  {
+    "name": "Crohn's Disease",
+    "symptoms": ["Diarrhea", "Fever", "Abdominal pain", "Fatigue", "Weight loss"]
+  },
+  {
+    "name": "Appendicitis",
+    "symptoms": ["Sudden pain in the lower right abdomen", "Nausea and vomiting", "Loss of appetite", "Fever"]
+  },
+  {
+    "name": "Kidney Stones",
+    "symptoms": ["Severe pain in the side and back", "Pain that radiates to the lower abdomen", "Pain on urination", "Nausea and vomiting"]
+  },
+  {
+    "name": "Urinary Tract Infection (UTI)",
+    "symptoms": ["Pain or burning sensation when urinating", "Frequent urge to urinate", "Cloudy urine", "Pelvic pain"]
+  },
+  {
+    "name": "Arthritis",
+    "symptoms": ["Joint pain", "Stiffness", "Swelling", "Redness", "Decreased range of motion"]
+  },
+  {
+    "name": "Osteoarthritis",
+    "symptoms": ["Joint pain", "Stiffness", "Loss of flexibility", "Grating sensation"]
+  },
+  {
+    "name": "Rheumatoid Arthritis",
+    "symptoms": ["Tender, warm, swollen joints", "Morning stiffness", "Fatigue", "Fever", "Weight loss"]
+  },
+  {
+    "name": "Gout",
+    "symptoms": ["Sudden, severe joint pain", "Inflammation and redness", "Limited range of motion"]
+  },
+  {
+    "name": "Fibromyalgia",
+    "symptoms": ["Widespread pain", "Fatigue", "Sleep problems", "Cognitive difficulties", "Headaches"]
+  },
+  {
+    "name": "Multiple Sclerosis (MS)",
+    "symptoms": ["Numbness or weakness in limbs", "Vision problems", "Tremor", "Fatigue", "Dizziness"]
+  },
+  {
+    "name": "Parkinson's Disease",
+    "symptoms": ["Tremor", "Slowed movement", "Rigid muscles", "Impaired posture and balance"]
+  },
+  {
+    "name": "Alzheimer's Disease",
+    "symptoms": ["Memory loss", "Difficulty with problem-solving", "Confusion with time or place", "Changes in mood or personality"]
+  },
+  {
+    "name": "Depression",
+    "symptoms": ["Persistent sadness", "Loss of interest in activities", "Fatigue", "Changes in appetite", "Sleep problems"]
+  },
+  {
+    "name": "Anxiety Disorder",
+    "symptoms": ["Feeling nervous or tense", "Increased heart rate", "Rapid breathing", "Sweating", "Trembling"]
+  },
+  {
+    "name": "Insomnia",
+    "symptoms": ["Difficulty falling asleep", "Waking up during the night", "Waking up too early", "Fatigue or irritability during the day"]
+  },
+  {
+    "name": "Chronic Fatigue Syndrome",
+    "symptoms": ["Extreme fatigue", "Sleep problems", "Muscle pain", "Headaches", "Difficulty concentrating"]
+  },
+  {
+    "name": "Celiac Disease",
+    "symptoms": ["Diarrhea", "Abdominal pain", "Bloating", "Weight loss", "Fatigue"]
+  },
+  {
+    "name": "Lupus",
+    "symptoms": ["Fatigue", "Fever", "Joint pain", "Rash", "Chest pain"]
+  },
+  {
+    "name": "Lyme Disease",
+    "symptoms": ["Rash", "Fever", "Headache", "Fatigue", "Joint pain"]
+  },
+  {
+    "name": "Mononucleosis (Mono)",
+    "symptoms": ["Extreme fatigue", "Fever", "Sore throat", "Swollen lymph nodes"]
+  },
+  {
+    "name": "Mumps",
+    "symptoms": ["Swollen, tender salivary glands", "Fever", "Headache", "Muscle aches"]
+  },
+  {
+    "name": "Measles",
+    "symptoms": ["High fever", "Cough", "Runny nose", "Red, watery eyes", "Rash"]
+  },
+  {
+    "name": "Chickenpox",
+    "symptoms": ["Itchy, blister-like rash", "Fever", "Headache", "Fatigue"]
+  },
+  {
+    "name": "Shingles",
+    "symptoms": ["Painful rash", "Burning or tingling sensation", "Fever", "Headache", "Fatigue"]
+  },
+  {
+    "name": "Dengue Fever",
+    "symptoms": ["High fever", "Severe headache", "Joint and muscle pain", "Rash", "Nausea and vomiting"]
+  },
+  {
+    "name": "Malaria",
+    "symptoms": ["High fever", "Shaking chills", "Sweating", "Headache", "Nausea and vomiting"]
+  },
+  {
+    "name": "Typhoid Fever",
+    "symptoms": ["Sustained high fever", "Headache", "Weakness", "Stomach pain", "Rash"]
+  },
+  {
+    "name": "Hepatitis A",
+    "symptoms": ["Fatigue", "Nausea and vomiting", "Abdominal pain", "Fever", "Jaundice"]
+  },
+  {
+    "name": "Hepatitis B",
+    "symptoms": ["Fatigue", "Abdominal pain", "Nausea", "Jaundice", "Dark urine"]
+  },
+  {
+    "name": "Hepatitis C",
+    "symptoms": ["Fatigue", "Joint pain", "Nausea", "Fever", "Jaundice"]
+  },
+  {
+    "name": "Psoriasis",
+    "symptoms": ["Red patches of skin covered with silvery scales", "Itching", "Soreness", "Thickened, pitted nails"]
+  },
+  {
+    "name": "Eczema",
+    "symptoms": ["Dry, itchy skin", "Red to brownish-gray patches", "Small, raised bumps that may leak fluid"]
+  },
+  {
+    "name": "Acne",
+    "symptoms": ["Pimples", "Whiteheads", "Blackheads", "Cysts", "Nodules"]
+  },
+  {
+    "name": "Rosacea",
+    "symptoms": ["Facial redness", "Swollen bumps", "Visible blood vessels", "Flushing"]
+  },
+  {
+    "name": "Herniated Disc",
+    "symptoms": ["Arm or leg pain", "Numbness or tingling", "Weakness"]
+  },
+  {
+    "name": "Carpal Tunnel Syndrome",
+    "symptoms": ["Numbness or tingling in the thumb, index, middle, and ring fingers", "Weakness in the hand"]
+  },
+  {
+    "name": "Tinnitus",
+    "symptoms": ["Ringing or buzzing in the ears", "Headache"]
+  },
+  {
+    "name": "Vertigo",
+    "symptoms": ["Dizziness", "Feeling of spinning or swaying", "Nausea", "Vomiting", "Balance problems"]
+  },
+  {
+    "name": "Pink Eye (Conjunctivitis)",
+    "symptoms": ["Redness in one or both eyes", "Itchiness in eyes", "Gritty feeling in eyes", "Discharge"]
+  },
+  {
+    "name": "Glaucoma",
+    "symptoms": ["Gradual loss of peripheral vision", "Tunnel vision", "Eye pain", "Blurred vision"]
+  },
+  {
+    "name": "Cataracts",
+    "symptoms": ["Cloudy or blurry vision", "Fading colors", "Glare from lights", "Poor night vision"]
+  },
+  {
+    "name": "Thyroid Disorders (Hyper- or Hypo-)",
+    "symptoms": ["Fatigue", "Weight changes", "Sensitivity to cold or heat", "Hair loss", "Mood swings"]
+  },
+  {
+    "name": "Gastroesophageal Reflux Disease (GERD)",
+    "symptoms": ["Heartburn", "Chest pain", "Difficulty swallowing", "Regurgitation of food or sour liquid"]
+  },
+  {
+    "name": "Cystic Fibrosis",
+    "symptoms": ["Persistent cough with thick mucus", "Wheezing", "Shortness of breath", "Frequent lung infections"]
+  },
+  {
+    "name": "Dementia",
+    "symptoms": ["Memory loss", "Difficulty with tasks", "Language problems", "Disorientation", "Changes in mood or personality"]
+  },
+  {
+    "name": "Chronic Kidney Disease",
+    "symptoms": ["Fatigue", "Nausea and vomiting", "Loss of appetite", "Swelling in ankles and feet", "Itchy skin"]
+  },
+  {
+    "name": "Osteoporosis",
+    "symptoms": ["Back pain", "Loss of height", "Stooped posture", "Bone fractures"]
+  },
+  {
+    "name": "Sleep Apnea",
+    "symptoms": ["Loud snoring", "Pauses in breathing during sleep", "Waking up with a dry mouth or sore throat", "Daytime sleepiness"]
+  },
+  {
+    "name": "Narcolepsy",
+    "symptoms": ["Excessive daytime sleepiness", "Sudden loss of muscle tone", "Sleep paralysis", "Hallucinations"]
+  },
+  {
+    "name": "Epilepsy",
+    "symptoms": ["Seizures", "Temporary confusion", "Uncontrollable jerking movements of the limbs", "Loss of consciousness"]
+  },
+  {
+    "name": "Autism Spectrum Disorder",
+    "symptoms": ["Social communication and interaction challenges", "Repetitive behaviors", "Restricted interests"]
+  },
+  {
+    "name": "Attention-Deficit/Hyperactivity Disorder (ADHD)",
+    "symptoms": ["Inattention", "Hyperactivity", "Impulsivity", "Difficulty staying focused"]
+  },
+  {
+    "name": "Schizophrenia",
+    "symptoms": ["Hallucinations", "Delusions", "Disorganized thinking", "Lack of motivation", "Social withdrawal"]
+  },
+  {
+    "name": "Bipolar Disorder",
+    "symptoms": ["Manic episodes", "Depressive episodes", "Mood swings"]
+  },
+  {
+    "name": "Borderline Personality Disorder",
+    "symptoms": ["Fear of abandonment", "Unstable relationships", "Impulsive behaviors", "Intense mood swings"]
+  },
+  {
+    "name": "Post-Traumatic Stress Disorder (PTSD)",
+    "symptoms": ["Flashbacks", "Nightmares", "Severe anxiety", "Avoidance of reminders of the trauma"]
+  },
+  {
+    "name": "Anorexia Nervosa",
+    "symptoms": ["Distorted body image", "Restricted eating", "Fear of gaining weight", "Low body weight"]
+  },
+  {
+    "name": "Bulimia Nervosa",
+    "symptoms": ["Binge-eating episodes followed by purging", "Obsession with body weight and shape"]
+  },
+  {
+    "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "symptoms": ["Shortness of breath", "Wheezing", "Chest tightness", "Chronic cough"]
+  },
+  {
+    "name": "Heart Failure",
+    "symptoms": ["Shortness of breath", "Fatigue and weakness", "Swelling in legs, ankles, and feet"]
+  },
+  {
+    "name": "Celiac Disease",
+    "symptoms": ["Diarrhea", "Fatigue", "Bloating", "Weight loss", "Abdominal pain"]
+  },
+  {
+    "name": "Lupus",
+    "symptoms": ["Fatigue", "Joint pain and stiffness", "Butterfly-shaped rash on the face", "Fever"]
+  },
+  {
+    "name": "Lyme Disease",
+    "symptoms": ["Fever", "Headache", "Fatigue", "Bull's-eye rash"]
+  },
+  {
+    "name": "Multiple Myeloma",
+    "symptoms": ["Bone pain", "Fatigue", "Frequent infections", "Weight loss"]
+  },
+  {
+    "name": "Leukemia",
+    "symptoms": ["Fever or chills", "Fatigue", "Frequent infections", "Easy bruising or bleeding"]
+  },
+  {
+    "name": "Non-Hodgkin's Lymphoma",
+    "symptoms": ["Swollen lymph nodes", "Fever", "Night sweats", "Weight loss"]
+  },
+  {
+    "name": "Hodgkin's Lymphoma",
+    "symptoms": ["Painless swelling of lymph nodes", "Fatigue", "Fever", "Weight loss", "Itching"]
+  },
+  {
+    "name": "Pancreatitis",
+    "symptoms": ["Upper abdominal pain", "Nausea and vomiting", "Fever", "Rapid pulse"]
+  },
+  {
+    "name": "Endometriosis",
+    "symptoms": ["Painful periods", "Pelvic pain", "Pain with intercourse", "Heavy bleeding"]
+  },
+  {
+    "name": "Polycystic Ovary Syndrome (PCOS)",
+    "symptoms": ["Irregular periods", "Weight gain", "Acne", "Hair growth on face and body"]
+  },
+  {
+    "name": "Erectile Dysfunction",
+    "symptoms": ["Inability to get or keep an erection firm enough for sex"]
+  },
+  {
+    "name": "Prostate Cancer",
+    "symptoms": ["Trouble urinating", "Decreased force in the stream of urine", "Blood in semen"]
+  },
+  {
+    "name": "Breast Cancer",
+    "symptoms": ["A lump or mass in the breast", "Changes in breast size or shape", "Nipple discharge"]
+  },
+  {
+    "name": "Colorectal Cancer",
+    "symptoms": ["Change in bowel habits", "Rectal bleeding", "Abdominal pain", "Weight loss"]
+  },
+  {
+    "name": "Melanoma",
+    "symptoms": ["A change in an existing mole", "A new, unusual-looking growth on the skin", "Asymmetrical shape", "Irregular border"]
+  }
+]
