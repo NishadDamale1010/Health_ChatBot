@@ -8,7 +8,7 @@ This project is part of **Smart India Hackathon (SIH 2025) - AI Driven Public He
 ---
 
 ## ✨ Features
-- ✅ Rule-based chatbot (no API needed)
+- ✅ Rule-based chatbot integrated with API's
 - ✅ Responds to **common health FAQs**
 - ✅ Handles **longer sentences** (keyword detection)
 - ✅ User-friendly UI with chat bubbles
@@ -16,12 +16,6 @@ This project is part of **Smart India Hackathon (SIH 2025) - AI Driven Public He
 
 ---
 
-## 🖥️ Demo
-- Clone the repo
-- Run the server locally
-- Open in browser and chat with your HealthBot 🤖
-
-*(Live link can be added if deployed)*
 
 ---
 
